@@ -1,0 +1,60 @@
+ 1048  clear
+ 1049  mkdir star_wars
+ 1050  cd star_wars
+ 1051  mkdir empire rebellion
+ 1052  ls -a
+ 1053  cd empire
+ 1054  touch darth_vader.txt
+ 1055  ls -a
+ 1056  echo "...heavy breathing..." >> darth_vader.txt
+ 1057  cat darth_vader.txt
+ 1058  touch emperor_palpatine.txt
+ 1059  mkdir death_star
+ 1060  mv darth_vader.txt death_star
+ 1061  git status
+ 1062  git remote -v
+ 1063  git add -A
+ 1064  git status
+ 1065  git log
+ 1066  cd ..
+ 1067  git status
+ 1068  git commit -m "Act 1 Completed"
+ 1069  git status
+ 1070  tree
+ 1071  cd star_wars/rebellion
+ 1072  touch princess_leia.txt && echo "Help me, Obi-Wan..." >> princess_leia.txt
+ 1073  cat princess_leia.txt
+ 1074  touch obi_wan.txt
+ 1075  touch luke_skywalker.txt
+ 1076  mkdir millenium_falcon
+ 1077  cd millenium_falcon
+ 1078  touch han_solo.txt chewbacca.txt
+ 1079  mv luke_skywalker.txt obi_wan.txt princess_leia.txt millenium_falcon
+ 1080  cd ..
+ 1081  mv luke_skywalker.txt obi_wan.txt princess_leia.txt millenium_falcon
+ 1082  cd ..
+ 1083  mv rebellion/millenium_falcon empire/death_star
+ 1084  git status
+ 1085  git add -A
+ 1086  git commit -m "Act 2 Completed"
+ 1087  git status
+ 1088  clear
+ 1089  tree
+ 1090  cd empire
+ 1091  mv death_star/millenium_falcon/* death_star
+ 1092  cd death_star
+ 1093  ks
+ 1094  ls
+ 1095  rm -rf obi_wan.txt
+ 1096  mv chewbacca.txt han_solo.txt princess_leia.txt luke_skywalker.txt millenium_falcon
+ 1097  ..
+ 1098  mv empire/death_star/millenium_falcon rebellion
+ 1099  mv empire/death_star/* empire
+ 1100  cd empire
+ 1101  rm -rf death_star
+ 1102  git status
+ 1103  git add -A
+ 1104  git status
+ 1105  git commit -m "Act 3 Completed"
+ 1106  git status
+ 1107  clear
